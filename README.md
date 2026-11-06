@@ -1,52 +1,77 @@
-<!-- PROJECT IMAGE / BANNER -->
+# 🌶️ Pepper – Intelligent Exam Preparation Platform
+
 <p align="center">
-  <img width="1862" height="1055" alt="Paperly landing page" src = "https://github.com/user-attachments/assets/b1dcf162-c681-4b24-a98f-10dccf21a598" />
+  <img width="1862" height="1055" alt="Pepper landing page" src="https://github.com/user-attachments/assets/b1dcf162-c681-4b24-a98f-10dccf21a598" />
 </p>
 
-# 📋 Paperly
-
-> A modern, intelligent exam question paper generation platform designed for small schools and solo teachers to create, manage, and distribute question papers effortlessly.
+> An intelligent full-stack web application designed to simplify exam preparation through previous-year question papers, AI-powered question generation, customizable exam patterns, and downloadable PDF papers.
 
 ---
 
 ## 📖 Description
 
-Paperly is a sophisticated Next.js application focused on simplifying the exam question paper creation process for educators. It combines an intuitive question bank interface, intelligent paper generation, customizable templates, and secure distribution features.
+**Pepper** is an intelligent full-stack web application designed to simplify exam preparation by providing a centralized platform for sharing previous-year question papers and generating new practice papers.
 
-Highlights:
-- Question bank management with categorization by subject, topic, and difficulty
-- Intelligent question paper generation with customizable layouts
-- Multiple question format support (MCQ, Short Answer, Essay, Numerical)
-- Question randomization and automatic numbering
-- PDF export with professional formatting
-- Secure paper distribution and access control
-- Clerk authentication with role-based access
-- Responsive design optimized for educators
-- Analytics dashboard for exam insights
+It combines an organized question paper repository, AI-powered question generation, customizable exam patterns, and downloadable PDF papers to help students prepare more effectively for examinations.
 
-<p><em>This is for education purposes only. I, the creator, am not earning a single rupee from this.</em></p>
+The platform aims to make exam preparation more accessible, organized, and efficient by bringing essential study resources and practice tools together in one place.
+
+### Key Highlights
+
+- Centralized repository for previous-year question papers.
+- AI-powered question generation for practice and preparation.
+- Customizable examination patterns and paper formats.
+- Question organization by subject, topic, and difficulty.
+- Multiple question formats, including MCQs, short answers, essays, and numerical questions.
+- PDF generation and downloading.
+- User-friendly and responsive interface.
+- Organized examination preparation workflow.
 
 ---
 
 ## ✨ Features
 
-- **Question Bank Management** – Store questions organized by subject, topic, chapter, and difficulty level with full-text search capabilities.
-- **Intelligent Paper Generation** – Automatically generate balanced question papers by selecting questions by difficulty distribution, topic coverage, and marks allocation.
-- **Multiple Question Formats** – Support for MCQ, short answer, long answer, numerical, fill-in-the-blank, true/false, and essay questions.
-- **Customizable Templates** – Pre-designed templates or create custom layouts with custom headers, footers, marks, and time allocation.
-- **Question Randomization** – Shuffle questions to prevent cheating, with option to maintain difficulty distribution.
-- **Paper Preview** – WYSIWYG preview before exporting with live formatting adjustments.
-- **PDF Export** – Generate professional PDF files with proper formatting, page breaks, and customizable styling.
-- **Secure Distribution** – Share papers via secure links with view-only access, download restrictions, and expiration dates.
-- **Version History** – Track all changes to question banks and generated papers with restore capability.
-- **Authentication** – Clerk sign-in with role-based access (Admin, Teacher, Student).
-- **Responsive UI** – Sidebar navigation, question editor, paper builder, and mobile-friendly interface.
+### 1. Question Paper Repository
+- Centralized platform for accessing previous-year question papers.
+- Organized question paper resources.
+- Easy access to examination preparation material.
+
+### 2. AI-Powered Question Generation
+- Generate new practice questions using AI.
+- Support more effective self-practice.
+- Assist students in preparing for different examination patterns.
+
+### 3. Customizable Exam Patterns
+- Customize examination paper structure.
+- Organize questions according to marks allocation.
+- Configure different question formats.
+
+### 4. Question Management
+- Organize questions by subject, topic, and difficulty.
+- Support MCQ, short answer, long answer, numerical, and essay questions.
+- Manage question collections.
+
+### 5. Paper Generation
+- Select and arrange questions.
+- Customize paper layouts.
+- Randomize questions where supported.
+- Preview generated examination papers.
+
+### 6. PDF Export
+- Generate downloadable question papers.
+- Maintain structured document formatting.
+- Make practice papers accessible offline.
+
+### 7. User Interface
+- Modern and intuitive interface.
+- Responsive design.
+- Organized navigation and application components.
 
 ---
 
 ## 🧠 Tech Stack
 
-**Frontend**
+### Frontend
 - Next.js 15 App Router
 - React 19
 - TypeScript
@@ -54,20 +79,20 @@ Highlights:
 - Radix UI primitives
 - Remix Icon / Lucide icons
 
-**Question & Paper Management**
-- TipTap or ProseMirror for rich question content editing
-- jsPDF or react-pdf for PDF generation
+### Question & Paper Management
+- TipTap / ProseMirror for rich question content editing
+- jsPDF / react-pdf for PDF generation
 - Markdown support with remark/rehype
-- Dynamic form handling with React Hook Form
+- React Hook Form for dynamic form handling
 
-**Data / Auth**
+### Data & Authentication
 - Firebase Realtime Database
-- Clerk authentication
-- Local storage for draft management
+- Clerk Authentication
+- Local Storage for draft management
 
-**Visualization / UI**
-- React PDF Viewer for preview
-- Framer Motion / Motion for animations
+### Visualization & UI
+- React PDF Viewer
+- Framer Motion / Motion
 - DiceBear avatar URLs
 - Custom question paper templates
 
@@ -76,32 +101,77 @@ Highlights:
 ## 🏗️ Architecture / Workflow
 
 ```text
-Teacher → Question Bank → Question Selection → Paper Generation → PDF Export
-             ↓                    ↓                      ↓
-      Question Storage      Randomization         Formatting
-             ↓                    ↓                      ↓
-      Firebase DB         Template Engine        Secure Distribution
+              STUDENT / USER
+                    |
+                    v
+             PEPPER WEB APP
+                    |
+          ---------------------
+          |         |         |
+          v         v         v
+       Previous   AI-Based   Exam Pattern
+       Papers     Questions  Customization
+          |         |         |
+          ---------------------
+                    |
+                    v
+             QUESTION MANAGEMENT
+                    |
+                    v
+              PAPER GENERATION
+                    |
+                    v
+              PAPER PREVIEW
+                    |
+                    v
+                PDF EXPORT
+                    |
+                    v
+          DOWNLOAD / PRACTICE
 ```
 
 ---
 
-### Quick Start (Windows)
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (recommended LTS version)
+- npm
+- Git
+- A code editor such as Visual Studio Code
+
+### Quick Start (Windows / Linux / macOS)
+
+**1. Clone the repository**
 
 ```bash
-# Clone the repository
-git clone https://github.com/DevRanbir/Paperly.git
+git clone https://github.com/saket2024/Pepper.git
+```
 
-# Navigate to project
-cd Paperly
+**2. Navigate to the project directory**
 
-# Install dependencies
+```bash
+cd Pepper
+```
+
+**3. Install dependencies**
+
+```bash
 npm install
+```
 
-# Start development server
+**4. Start the development server**
+
+```bash
 npm run dev
 ```
 
-Open:
+**5. Open the application**
+
+Visit:
 
 ```text
 http://localhost:3000
@@ -109,17 +179,19 @@ http://localhost:3000
 
 ---
 
-### Manual Setup
+## ⚙️ Manual Setup
 
-**1. Install dependencies**
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-**2. Configure environment**
+### 2. Configure Environment Variables
 
-Create `.env.local` in the project root.
+Create a `.env.local` file in the project root.
+
+Add the required environment variables:
 
 ```env
 # Clerk Authentication
@@ -140,20 +212,29 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 PDF_GENERATION_API_URL=http://localhost:3001
 ```
 
-**3. Run the app**
+Replace the placeholder values with your actual configuration.
+
+**Important:** Never commit `.env.local` or expose private API keys, authentication secrets, or credentials on GitHub.
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-**4. Production build**
+### 4. Production Build
 
 ```bash
 npm run build
+```
+
+Start the production server:
+
+```bash
 npm start
 ```
 
-**5. Lint**
+### 5. Lint
 
 ```bash
 npm run lint
@@ -163,9 +244,11 @@ npm run lint
 
 ## 🐳 Docker Support
 
-This project does not include a dedicated root `docker-compose.yml` by default. It can be containerized as a standard Next.js app if needed.
+This project does not include a dedicated root `docker-compose.yml` by default.
 
-Basic production flow:
+It can be containerized as a standard Next.js application.
+
+Basic production workflow:
 
 ```bash
 npm install
@@ -179,47 +262,71 @@ npm start
 
 Create `.env.local` in the project root.
 
-```env
-NEXT_PUBLIC_APP_URL=http://localhost:3000
+The following variables may be required depending on the configured services:
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+| Variable | Purpose |
+|---|---|
+| `NEXT_PUBLIC_APP_URL` | Application URL |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk publishable key |
+| `CLERK_SECRET_KEY` | Clerk server-side authentication |
+| `NEXT_PUBLIC_FIREBASE_API_KEY` | Firebase API key |
+| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Firebase authentication domain |
+| `NEXT_PUBLIC_FIREBASE_DATABASE_URL` | Firebase Realtime Database URL |
+| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Firebase project ID |
+| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Firebase storage bucket |
+| `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | Firebase messaging sender ID |
+| `NEXT_PUBLIC_FIREBASE_APP_ID` | Firebase application ID |
+| `PDF_GENERATION_API_URL` | Optional PDF generation service URL |
 
-NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_DATABASE_URL=https://your_project.firebaseio.com/
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+### Notes
 
-PDF_GENERATION_API_URL=http://localhost:3001
-```
-
-Notes:
-- `CLERK_SECRET_KEY` is required for authentication and authorization.
-- Firebase variables are needed for storing question banks and generated papers.
-- `PDF_GENERATION_API_URL` is optional; without it, the app uses client-side PDF generation.
-- Local fallback behavior is available for draft question storage.
+- Configure Clerk credentials to enable the corresponding authentication functionality.
+- Firebase configuration is required for the corresponding cloud data functionality.
+- `PDF_GENERATION_API_URL` is optional if client-side PDF generation is supported by the application.
+- Local fallback behavior may be available for draft question storage.
 
 ---
 
-## 🧪 Usage
+## 📚 Usage
 
-- Step 1: Start the app with `npm run dev`
-- Step 2: Open `http://localhost:3000`
-- Step 3: Sign in with your teacher account
-- Step 4: Create a new question bank or import existing questions
-- Step 5: Organize questions by subject, topic, and difficulty
-- Step 6: Use the paper generator to select and arrange questions
-- Step 7: Preview and customize the paper layout
-- Step 8: Export to PDF and distribute securely
+Follow the general application workflow:
 
-Example workflows:
+1. Start the application using `npm run dev`.
+2. Open `http://localhost:3000`.
+3. Sign in if authentication is configured.
+4. Explore the available previous-year question papers.
+5. Select a subject or examination.
+6. Generate practice questions using the available AI functionality.
+7. Customize the examination pattern.
+8. Arrange and preview the question paper.
+9. Export the generated paper as a PDF.
+10. Download the paper for examination practice.
+
+### Example Workflow
 
 ```text
-Create Question Bank → Add Questions → Categorize by Topic → Generate Paper
-Select by Difficulty → Randomize → Set Marks → Export PDF → Share Link
+Open Pepper
+     |
+     v
+Select Subject / Previous-Year Paper
+     |
+     v
+Generate or Select Questions
+     |
+     v
+Customize Exam Pattern
+     |
+     v
+Arrange Questions
+     |
+     v
+Preview Question Paper
+     |
+     v
+Download PDF
+     |
+     v
+Practice for Examination
 ```
 
 ---
@@ -227,11 +334,11 @@ Select by Difficulty → Randomize → Set Marks → Export PDF → Share Link
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img alt="landing-page" src="screenshots/Landing_page.png" width="800" />
-  <img alt="question-bank" src="screenshots/Question_Bank.png" width="800" />
+  <img alt="Pepper Landing Page" src="screenshots/Landing_page.png" width="800" />
+  <img alt="Question Bank" src="screenshots/Question_Bank.png" width="800" />
   <br/>
-  <img alt="paper-generator" src="screenshots/Paper_Generator.png" width="800" />
-  <img alt="pdf-preview" src="screenshots/PDF_Preview.png" width="800" />
+  <img alt="Paper Generator" src="screenshots/Paper_Generator.png" width="800" />
+  <img alt="PDF Preview" src="screenshots/PDF_Preview.png" width="800" />
 </p>
 
 ---
@@ -239,7 +346,7 @@ Select by Difficulty → Randomize → Set Marks → Export PDF → Share Link
 ## 📂 Project Structure
 
 ```text
-Paperly/
+Pepper/
 ├── README.md
 ├── changes.md
 ├── components.json
@@ -250,15 +357,18 @@ Paperly/
 ├── package-lock.json
 ├── postcss.config.mjs
 ├── tsconfig.json
+│
 ├── public/
 │   ├── logo.svg
 │   ├── favicon.ico
 │   └── assets/
+│
 ├── screenshots/
 │   ├── Landing_page.png
 │   ├── Question_Bank.png
 │   ├── Paper_Generator.png
 │   └── PDF_Preview.png
+│
 └── src/
     ├── app/
     │   ├── api/
@@ -268,6 +378,7 @@ Paperly/
     │   │   ├── pdf/
     │   │   ├── clerk/
     │   │   └── export/
+    │   │
     │   ├── [username]/papers/
     │   ├── question-bank/
     │   ├── paper-generator/
@@ -278,6 +389,7 @@ Paperly/
     │   ├── globals.css
     │   ├── layout.tsx
     │   └── page.tsx
+    │
     ├── components/
     │   ├── app-sidebar.tsx
     │   ├── question-editor.tsx
@@ -288,6 +400,7 @@ Paperly/
     │   ├── template-selector.tsx
     │   ├── formatting-toolbar.tsx
     │   └── sidebar.tsx
+    │
     ├── contexts/
     │   ├── auth-context.tsx
     │   ├── question-context.tsx
@@ -295,12 +408,14 @@ Paperly/
     │   ├── template-context.tsx
     │   ├── settings-context.tsx
     │   └── theme-context.tsx
+    │
     ├── hooks/
     │   ├── use-firebase-auth.ts
     │   ├── use-questions.ts
     │   ├── use-paper-generator.ts
     │   ├── use-pdf-export.ts
     │   └── use-mobile.ts
+    │
     └── lib/
         ├── question-service.ts
         ├── paper-service.ts
@@ -313,71 +428,85 @@ Paperly/
         └── utils.ts
 ```
 
+*Note: This is the documented project structure. Update it if the actual repository structure differs.*
+
 ---
 
 ## 🚧 Future Improvements
 
-- [ ] Add AI-powered question suggestion and difficulty analysis
-- [ ] Add bulk question import from CSV/Excel files
-- [ ] Add question paper analytics and statistics
-- [ ] Add collaborative question bank for school teams
-- [ ] Add answer key generation and student answer tracking
-- [ ] Add OCR for scanned question papers
-- [ ] Add examination schedule management
-- [ ] Add student dashboard for viewing papers and answers
-- [ ] Add marking and grading tools
-- [ ] Add comprehensive test coverage and performance optimization
+- [ ] Add bulk question import from CSV/Excel files.
+- [ ] Add question paper analytics and statistics.
+- [ ] Add collaborative question banks for school teams.
+- [ ] Add answer key generation and student answer tracking.
+- [ ] Add OCR support for scanned question papers.
+- [ ] Add examination schedule management.
+- [ ] Add student dashboard for viewing papers and answers.
+- [ ] Add marking and grading tools.
+- [ ] Improve test coverage and performance optimization.
+- [ ] Expand AI-powered question generation and difficulty analysis.
 
 ---
 
 ## 🛠️ Troubleshooting
 
-**PDF export is not working**
+### PDF Export Is Not Working
 
-```bash
-# Check that PDF_GENERATION_API_URL is set or use client-side generation
+- Verify the PDF generation configuration.
+- Check whether client-side PDF generation is available.
+- Verify the configured PDF generation service URL, if used.
+
+Example:
+
+```env
 PDF_GENERATION_API_URL=http://localhost:3001
 ```
 
-Restart the dev server after editing `.env.local`.
+Restart the development server after changing `.env.local`.
 
-**Firebase data is not syncing**
+### Firebase Data Is Not Syncing
 
-- Confirm `NEXT_PUBLIC_FIREBASE_DATABASE_URL` is correct.
+- Confirm that `NEXT_PUBLIC_FIREBASE_DATABASE_URL` is correct.
 - Check Firebase Realtime Database rules.
-- Ensure your questions are being saved before generating papers.
+- Verify that questions are being saved correctly.
 
-**Clerk sign-in redirects to the wrong route**
+### Clerk Sign-In Redirects to the Wrong Route
 
-- The question bank route is `/question-bank`.
-- Check app settings and local env redirect URLs.
+- Verify Clerk configuration.
+- Check application redirect settings.
+- Confirm the configured routes.
 
-**Questions are not appearing in the generator**
+### Questions Are Not Appearing in the Generator
 
-- Verify questions have been saved to Firebase.
-- Ensure the question categories and metadata are properly set.
-- Check browser console for any validation errors.
+- Verify that questions have been saved.
+- Check question categories and metadata.
+- Inspect the browser console for errors.
 
-**PDF formatting looks incorrect**
+### PDF Formatting Looks Incorrect
 
-- Verify the template is selected correctly.
-- Check page size and margins in template settings.
-- Ensure question content doesn't exceed available space.
+- Verify the selected template.
+- Check page size and margins.
+- Ensure question content fits the available space.
 
 ---
 
-## 👥 Team / Author
+## 👨‍💻 Author
 
-* **Name:** DevRanbir
-* **GitHub:** [https://github.com/DevRanbir](https://github.com/DevRanbir)
+**Saket Kumar Suman**
+
+- GitHub: [@saket2024](https://github.com/saket2024)
+- Project Repository: [Pepper](https://github.com/saket2024/Pepper)
 
 ---
 
 ## ⚠️ Disclaimer
 
-Paperly is for educational use by authorized educators and school administrators. Question content and answer keys should be kept confidential and handled according to your institution's policies. Verify all exported papers for accuracy before distribution to students.
+Pepper is an educational project designed to support examination preparation and question paper creation.
 
-This is for education purposes only. I, the creator, am not earning a single rupee from this.
+Users should verify generated questions and exported papers for accuracy and suitability before using them in academic assessments.
+
+Question papers and answer keys should be handled responsibly and according to applicable institutional policies.
+
+This project is developed for educational purposes.
 
 ---
 
@@ -385,17 +514,27 @@ This is for education purposes only. I, the creator, am not earning a single rup
 
 This project is licensed under the MIT License.
 
+See the `LICENSE` file for details.
+
 ---
 
 ## 🙏 Acknowledgments
 
-- Clerk for secure authentication
-- Firebase for reliable question storage
-- Radix UI for accessible components
-- TipTap/ProseMirror for rich text editing
-- jsPDF/react-pdf for PDF generation
-- React Hook Form for efficient form handling
-- Next.js and React teams
-- Open source community
+We acknowledge the developers and communities behind the technologies and tools used in this project:
+
+- Next.js and React teams.
+- Clerk for authentication services.
+- Firebase for database services.
+- Radix UI for accessible components.
+- TipTap / ProseMirror for rich-text editing.
+- jsPDF / react-pdf for PDF generation.
+- React Hook Form for form management.
+- Open-source community for their contributions.
 
 ---
+
+<p align="center">
+  <b>🌶️ Pepper – Prepare Smarter. Practice Better.</b>
+  <br/>
+  Built with ❤️ for better examination preparation.
+</p>
