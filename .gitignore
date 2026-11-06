@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js and build outputs
+.next/
+.dist/
+dist/
+out/
+build/
+.turbo/
+.vercel/
+coverage/
+*.tsbuildinfo
+
+# generated temp artifacts
+public/temp.zip
+public/temp_docx/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# os files
+.DS_Store
+Thumbs.db
+Desktop.ini
