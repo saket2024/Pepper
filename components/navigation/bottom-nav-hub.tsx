@@ -48,7 +48,7 @@ export function BottomNavHub() {
 
           <div className="hidden lg:flex flex-col">
             <span className="font-extrabold text-sm leading-tight text-black dark:text-white uppercase tracking-tight">
-              Paperly
+              Pepper
             </span>
             <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400 truncate max-w-[140px]">
               {paper.schoolName || paper.title || "Exam Builder"}

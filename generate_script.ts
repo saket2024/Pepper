@@ -76,8 +76,7 @@ async function main() {
 
   const blob1 = await generatePaperDocxBlob(paper1);
   await saveBlob(blob1, [
-    "C:\\Users\\Ranbi\\Downloads\\All_Question_Types_Conditions_Spec.docx",
-    "d:\\Projects\\Paperly\\public\\All_Question_Types_Conditions_Spec.docx"
+    "d:\\Projects\\Pepper\\public\\All_Question_Types_Conditions_Spec.docx"
   ]);
 
   // Paper 2: Replica_Unit_Test_2_Hindi_A5
@@ -213,8 +212,7 @@ async function main() {
 
   const blob2 = await generatePaperDocxBlob(paper2);
   await saveBlob(blob2, [
-    "C:\\Users\\Ranbi\\Downloads\\Replica_Unit_Test_2_Hindi_A5.docx",
-    "d:\\Projects\\Paperly\\public\\Replica_Unit_Test_2_Hindi_A5.docx"
+    "d:\\Projects\\Pepper\\public\\Replica_Unit_Test_2_Hindi_A5.docx"
   ]);
 }
 

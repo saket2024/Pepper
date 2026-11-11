@@ -252,8 +252,7 @@ async function main() {
     const arrayBuffer = await blob.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
-    const path1 = 'C:/Users/Ranbi/Downloads/All_Question_Types_Conditions_Spec.docx';
-    const path2 = 'd:/Projects/Paperly/public/All_Question_Types_Conditions_Spec.docx';
+    const path1 = 'd:/Projects/Pepper/public/All_Question_Types_Conditions_Spec.docx';
 
     fs.writeFileSync(path1, buffer);
     console.log(`Document successfully saved to ${path1} (Size: ${buffer.length} bytes)`);
