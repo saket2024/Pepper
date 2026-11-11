@@ -257,8 +257,8 @@ async function main() {
     fs.writeFileSync(path1, buffer);
     console.log(`Document successfully saved to ${path1} (Size: ${buffer.length} bytes)`);
 
-    fs.writeFileSync(path2, buffer);
-    console.log(`Document successfully saved to ${path2} (Size: ${buffer.length} bytes)`);
+    fs.writeFileSync(path1, buffer);
+    console.log(`Document successfully saved to ${path1} (Size: ${buffer.length} bytes)`);
   } catch (error) {
     console.error('Error generating document:', error);
   }
